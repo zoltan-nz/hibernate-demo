@@ -3,10 +3,10 @@ package org.hibernate.tutorial.domain;
 import java.util.Date;
 
 public class Event {
-    private Long   id;
+    private Long id;
 
     private String title;
-    private Date   date;
+    private Date date;
 
     public Event() {
     }
@@ -15,16 +15,20 @@ public class Event {
         return date;
     }
 
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
     public Long getId() {
         return id;
     }
 
-    public String getTitle() {
-        return title;
+    private void setId(Long id) {
+        this.id = id;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public String getTitle() {
+        return title;
     }
 
     public void setTitle(String title) {
